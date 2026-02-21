@@ -2,8 +2,9 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>и┐ЙЬ Х╛░═б о╟Х╛░ - о┴╣╛о═ож д╛▓╣╛ о╛Хи┴и</title>
+    <title>ржирж┐ржЙржЬ ржХрж╛рж░рзНржб ржорзЗржХрж╛рж░ - ржорзБрж╣рж╛ржорзНржоржж рждрж╛рж▓рж╣рж╛ ржорж╛ржХржирзБржи</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
@@ -19,7 +20,7 @@
             background-color: #f0fdf4; /* Light Islamic Green Background */
         }
         
-        /* ░╟╕ки═╕┐н к═░┐н┐Й Хи═Я╟Зи╛░ */
+        /* рж░рзЗрж╕ржкржирзНрж╕рж┐ржн ржкрзНрж░рж┐ржнрж┐ржЙ ржХржирзНржЯрзЗржЗржирж╛рж░ */
         .preview-container {
             width: 100%;
             max-width: 550px;
@@ -31,7 +32,7 @@
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
         
-        /* о┬▓ Х╛░═б п╛ б╛Йи▓╦б ╣м╟ (чцюцxчцюц) */
+        /* ржорзВрж▓ ржХрж╛рж░рзНржб ржпрж╛ ржбрж╛ржЙржирж▓рзЛржб рж╣ржмрзЗ (рззрзжрзорзжxрззрзжрзорзж) */
         #capture-area {
             position: absolute;
             top: 0;
@@ -45,7 +46,7 @@
             transform-origin: top left;
         }
 
-        /* Х╛╕═Яо ╕═Х═░▓м╛░ */
+        /* ржХрж╛рж╕рзНржЯржо рж╕рзНржХрзНрж░рж▓ржмрж╛рж░ */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #f1f1f1; }
         ::-webkit-scrollbar-thumb { background: #22c55e; border-radius: 4px; }
@@ -57,11 +58,11 @@
     <header class="bg-green-800 text-white p-4 shadow-md sticky top-0 z-50">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="text-center md:text-left">
-                <h1 class="text-2xl font-bold text-green-300">и┐ЙЬ Х╛░═б о╟Х╛░ <i class="fa-solid fa-moon ml-2"></i></h1>
-                <p class="text-sm text-gray-200 mt-1">б╟н╟▓кб л░: о┴╣╛о═ож д╛▓╣╛ о╛Хи┴и (Tahzibul Ummah)</p>
+                <h1 class="text-2xl font-bold text-green-300">ржирж┐ржЙржЬ ржХрж╛рж░рзНржб ржорзЗржХрж╛рж░ <i class="fa-solid fa-moon ml-2"></i></h1>
+                <p class="text-sm text-gray-200 mt-1">ржбрзЗржнрзЗрж▓ржкржб ржлрж░: ржорзБрж╣рж╛ржорзНржоржж рждрж╛рж▓рж╣рж╛ ржорж╛ржХржирзБржи (Tahzibul Ummah)</p>
             </div>
             <button onclick="downloadCard()" class="bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-8 rounded shadow-lg flex items-center gap-2 transition-colors border border-green-400">
-                <i class="fa-solid fa-download text-xl"></i> ПЗЪб┐ б╛Йи▓╦б
+                <i class="fa-solid fa-download text-xl"></i> ржПржЗржЪржбрж┐ ржбрж╛ржЙржирж▓рзЛржб
             </button>
         </div>
     </header>
@@ -71,33 +72,33 @@
         <!-- Left Panel: Editor Controls -->
         <div class="w-full lg:w-[45%] bg-white p-6 rounded-xl shadow border-t-4 border-green-600 h-[calc(100vh-140px)] overflow-y-auto">
             <h2 class="text-xl font-bold mb-6 text-gray-800 border-b pb-2">
-                <i class="fa-solid fa-pen-to-square text-green-600"></i> де═п Пб┐Я Х░┴и
+                <i class="fa-solid fa-pen-to-square text-green-600"></i> рждржерзНржп ржПржбрж┐ржЯ ржХрж░рзБржи
             </h2>
             
             <div class="space-y-6">
                 
                 <!-- Section 1: Main Image -->
                 <div class="bg-gray-50 p-4 rounded border">
-                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-image text-blue-500"></i> ч. о┬▓ Ым┐</h3>
+                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-image text-blue-500"></i> рзз. ржорзВрж▓ ржЫржмрж┐</h3>
                     <input type="file" id="imageInput" accept="image/*" class="w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-bold file:bg-green-100 file:text-green-700 hover:file:bg-green-200 border bg-white cursor-pointer">
-                    <p class="text-xs text-gray-400 mt-2">* ╕╛ЗЯ╟░ У▀╛Я╛░о╛░═Х б┐л▓═Ян╛м╟ Ым┐д╟ п┴Х═д ╣м╟d</p>
+                    <p class="text-xs text-gray-400 mt-2">* рж╕рж╛ржЗржЯрзЗрж░ ржУрзЯрж╛ржЯрж╛рж░ржорж╛рж░рзНржХ ржбрж┐ржлрж▓рзНржЯржнрж╛ржмрзЗ ржЫржмрж┐рждрзЗ ржпрзБржХрзНржд рж╣ржмрзЗред</p>
                 </div>
 
                 <!-- Section 2: News Text -->
                 <div class="bg-gray-50 p-4 rounded border">
-                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-newspaper text-red-500"></i> ш. ╢┐░╦и╛о У д╛░┐Ц</h3>
+                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-newspaper text-red-500"></i> рзи. рж╢рж┐рж░рзЛржирж╛ржо ржУ рждрж╛рж░рж┐ржЦ</h3>
                     <div class="space-y-3">
-                        <textarea id="headlineInput" rows="3" class="w-full p-3 border rounded focus:border-red-500 outline-none resize-none text-lg font-semibold">Жж░═╢ ╕о╛Ь Чаи╟ д░┴гж╟░ н┬о┐Х╛: З╕▓╛о┐Х о┬▓═пм╦з╟░ Ж▓╦Х╟ ПХЯ┐ м┐╢═▓╟╖г</textarea>
-                        <input type="text" id="dateInput" value="шч л╟м═░┴п╝╛░┐ шцшь" class="w-full p-2 border rounded focus:border-red-500 outline-none">
+                        <textarea id="headlineInput" rows="3" class="w-full p-3 border rounded focus:border-red-500 outline-none resize-none text-lg font-semibold">ржЖржжрж░рзНрж╢ рж╕ржорж╛ржЬ ржЧржаржирзЗ рждрж░рзБржгржжрзЗрж░ ржнрзВржорж┐ржХрж╛: ржЗрж╕рж▓рж╛ржорж┐ржХ ржорзВрж▓рзНржпржмрзЛржзрзЗрж░ ржЖрж▓рзЛржХрзЗ ржПржХржЯрж┐ ржмрж┐рж╢рзНрж▓рзЗрж╖ржг</textarea>
+                        <input type="text" id="dateInput" value="рзирзз ржлрзЗржмрзНрж░рзБржпрж╝рж╛рж░рж┐ рзирзжрзирзм" class="w-full p-2 border rounded focus:border-red-500 outline-none">
                     </div>
                 </div>
 
                 <!-- Section 3: Social & Branding -->
                 <div class="bg-gray-50 p-4 rounded border">
-                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-globe text-indigo-500"></i> щ. ╕╦╢═п╛▓ о┐б┐п╝╛ (Х╛▓╦ ░┐ми)</h3>
+                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-globe text-indigo-500"></i> рзй. рж╕рзЛрж╢рзНржпрж╛рж▓ ржорж┐ржбрж┐ржпрж╝рж╛ (ржХрж╛рж▓рзЛ рж░рж┐ржмржи)</h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 mb-1">▓╦Ч╦ Я╟Х═╕Я</label>
+                            <label class="block text-xs font-bold text-gray-500 mb-1">рж▓рзЛржЧрзЛ ржЯрзЗржХрзНрж╕ржЯ</label>
                             <input type="text" id="brandNameInput" value="tahzibul | ummah" class="w-full p-2 border rounded text-sm outline-none">
                         </div>
                         <div>
@@ -117,24 +118,24 @@
 
                 <!-- Section 4: Ad Banner -->
                 <div class="bg-gray-50 p-4 rounded border">
-                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-bullhorn text-orange-500"></i> ъ. м┐Ь═Ю╛ки (╕м╛░ и┐Ъ╟)</h3>
+                    <h3 class="font-bold text-gray-700 mb-3"><i class="fa-solid fa-bullhorn text-orange-500"></i> рзк. ржмрж┐ржЬрзНржЮрж╛ржкржи (рж╕ржмрж╛рж░ ржирж┐ржЪрзЗ)</h3>
                     <div class="space-y-3">
                         <div class="grid grid-cols-2 gap-3">
                             <div>
-                                <label class="block text-xs font-bold text-gray-500 mb-1">м╛о╟░ Х╛▓╦ мХ═╕╟░ ▓╟Ц╛</label>
-                                <input type="text" id="adLogoInput" value="д╛╣Ь└м" class="w-full p-2 border rounded text-sm outline-none">
+                                <label class="block text-xs font-bold text-gray-500 mb-1">ржмрж╛ржорзЗрж░ ржХрж╛рж▓рзЛ ржмржХрзНрж╕рзЗрж░ рж▓рзЗржЦрж╛</label>
+                                <input type="text" id="adLogoInput" value="рждрж╛рж╣ржЬрзАржм" class="w-full p-2 border rounded text-sm outline-none">
                             </div>
                             <div>
-                                <label class="block text-xs font-bold text-gray-500 mb-1">б╛и╟░ ╕м┴Ь мХ═╕╟░ ▓╟Ц╛</label>
-                                <input type="text" id="adDiscountInput" value="чц% Ы╛▄" class="w-full p-2 border rounded text-sm outline-none">
+                                <label class="block text-xs font-bold text-gray-500 mb-1">ржбрж╛ржирзЗрж░ рж╕ржмрзБржЬ ржмржХрзНрж╕рзЗрж░ рж▓рзЗржЦрж╛</label>
+                                <input type="text" id="adDiscountInput" value="рззрзж% ржЫрж╛рзЬ" class="w-full p-2 border rounded text-sm outline-none">
                             </div>
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 mb-1">о╛ЭЦ╛и╟░ ▓╛▓ ╕═▓╦Ч╛и</label>
-                            <input type="text" id="adSloganInput" value="╕дд╛ У жХ═╖д╛░ ╕╛е╟ З╕▓╛о┐Х б┐Ь╛Зи" class="w-full p-2 border rounded text-sm font-bold outline-none">
+                            <label class="block text-xs font-bold text-gray-500 mb-1">ржорж╛ржЭржЦрж╛ржирзЗрж░ рж▓рж╛рж▓ рж╕рзНрж▓рзЛржЧрж╛ржи</label>
+                            <input type="text" id="adSloganInput" value="рж╕рждрждрж╛ ржУ ржжржХрзНрж╖рждрж╛рж░ рж╕рж╛ржерзЗ ржЗрж╕рж▓рж╛ржорж┐ржХ ржбрж┐ржЬрж╛ржЗржи" class="w-full p-2 border rounded text-sm font-bold outline-none">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-gray-500 mb-1">б╛и ж┐Х╟░ Ы╦Я Ым┐:</label>
+                            <label class="block text-xs font-bold text-gray-500 mb-1">ржбрж╛ржи ржжрж┐ржХрзЗрж░ ржЫрзЛржЯ ржЫржмрж┐:</label>
                             <input type="file" id="adImageInput" accept="image/*" class="w-full text-sm text-gray-600 file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-xs file:font-bold file:bg-gray-200 border bg-white cursor-pointer">
                         </div>
                     </div>
@@ -147,7 +148,7 @@
         <div class="w-full lg:w-[55%] flex flex-col items-center justify-center">
             
             <div class="w-full flex justify-between items-center mb-4 px-2 max-w-[550px]">
-                <h2 class="text-xl font-bold text-gray-800"><i class="fa-solid fa-eye text-green-600"></i> ▓╛Зн к═░┐н┐Й</h2>
+                <h2 class="text-xl font-bold text-gray-800"><i class="fa-solid fa-eye text-green-600"></i> рж▓рж╛ржЗржн ржкрзНрж░рж┐ржнрж┐ржЙ</h2>
                 <span class="text-sm bg-gray-800 text-white px-3 py-1 rounded">1080x1080</span>
             </div>
             
@@ -164,7 +165,7 @@
                         <!-- Subtle, Small Watermark (Top Right) -->
                         <div class="absolute top-5 right-6 pointer-events-none z-10 opacity-60">
                             <span class="text-white text-[1.2rem] font-semibold tracking-wider drop-shadow-md bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20 flex items-center gap-2">
-                                <i class="fa-solid fa-leaf text-sm"></i> и┐ЙЬ Х╛░═б о╟Х╛░
+                                <i class="fa-solid fa-leaf text-sm"></i> ржирж┐ржЙржЬ ржХрж╛рж░рзНржб ржорзЗржХрж╛рж░
                             </span>
                         </div>
                     </div>
@@ -172,10 +173,10 @@
                     <!-- 2. Main Red News Banner (Flat color, EXACTLY like original image) -->
                     <div class="w-full bg-[#cc0000] text-white px-12 py-10 flex-shrink-0 relative">
                         <h1 id="previewHeadline" class="text-[3.3rem] font-black text-center leading-[1.3] tracking-normal drop-shadow-sm">
-                            Жж░═╢ ╕о╛Ь Чаи╟ д░┴гж╟░ н┬о┐Х╛: З╕▓╛о┐Х о┬▓═пм╦з╟░ Ж▓╦Х╟ ПХЯ┐ м┐╢═▓╟╖г
+                            ржЖржжрж░рзНрж╢ рж╕ржорж╛ржЬ ржЧржаржирзЗ рждрж░рзБржгржжрзЗрж░ ржнрзВржорж┐ржХрж╛: ржЗрж╕рж▓рж╛ржорж┐ржХ ржорзВрж▓рзНржпржмрзЛржзрзЗрж░ ржЖрж▓рзЛржХрзЗ ржПржХржЯрж┐ ржмрж┐рж╢рзНрж▓рзЗрж╖ржг
                         </h1>
                         <div class="w-full mt-4 flex justify-end">
-                            <span id="previewDate" class="text-[1.6rem] font-bold opacity-90 drop-shadow-sm">шч л╟м═░┴п╝╛░┐ шцшь</span>
+                            <span id="previewDate" class="text-[1.6rem] font-bold opacity-90 drop-shadow-sm">рзирзз ржлрзЗржмрзНрж░рзБржпрж╝рж╛рж░рж┐ рзирзжрзирзм</span>
                         </div>
                     </div>
 
@@ -213,7 +214,7 @@
                             <div class="absolute -right-8 -top-8 w-24 h-24 bg-red-600/40 rounded-full blur-2xl"></div>
                             
                             <div class="flex items-center gap-3 z-10">
-                                <span id="previewAdLogo" class="text-[2.8rem] font-black bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">д╛╣Ь└м</span>
+                                <span id="previewAdLogo" class="text-[2.8rem] font-black bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">рждрж╛рж╣ржЬрзАржм</span>
                                 <i class="fa-solid fa-meteor text-[1.8rem] text-yellow-400 drop-shadow-[0_0_10px_rgba(250,204,21,0.8)] -mt-2"></i>
                             </div>
                             <!-- Subtitle badge -->
@@ -222,13 +223,13 @@
 
                         <!-- Middle Slogan (White Block) -->
                         <div class="flex-grow flex items-center justify-center px-6">
-                            <span id="previewAdSlogan" class="text-[2.6rem] font-black text-red-600 text-center drop-shadow-sm">╕дд╛ У жХ═╖д╛░ ╕╛е╟ З╕▓╛о┐Х б┐Ь╛Зи</span>
+                            <span id="previewAdSlogan" class="text-[2.6rem] font-black text-red-600 text-center drop-shadow-sm">рж╕рждрждрж╛ ржУ ржжржХрзНрж╖рждрж╛рж░ рж╕рж╛ржерзЗ ржЗрж╕рж▓рж╛ржорж┐ржХ ржбрж┐ржЬрж╛ржЗржи</span>
                         </div>
 
                         <!-- Right Offer & Image -->
                         <div class="flex items-center gap-5 pr-5 bg-gray-50 pl-5 border-l border-gray-200">
                             <div class="bg-[#22c55e] text-white px-6 py-2 text-[2.2rem] font-black shadow-sm rounded-sm">
-                                <span id="previewAdDiscount">чц% Ы╛▄</span>
+                                <span id="previewAdDiscount">рззрзж% ржЫрж╛рзЬ</span>
                             </div>
                             <img id="previewAdImage" src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=200&auto=format&fit=crop" crossorigin="anonymous" class="h-[95px] w-[140px] object-cover border-2 border-white shadow-md rounded-sm" alt="Ad">
                         </div>
@@ -237,15 +238,15 @@
                 </div>
             </div>
             
-            <p class="mt-6 text-center text-gray-500 text-sm font-semibold">й шцшь о┴╣╛о═ож д╛▓╣╛ о╛Хи┴и. ╕░═м╕═мд═м ╕В░Х═╖┐д.</p>
+            <p class="mt-6 text-center text-gray-500 text-sm font-semibold">┬й рзирзжрзирзм ржорзБрж╣рж╛ржорзНржоржж рждрж╛рж▓рж╣рж╛ ржорж╛ржХржирзБржи. рж╕рж░рзНржмрж╕рзНржмрждрзНржм рж╕ржВрж░ржХрзНрж╖рж┐ржд.</p>
         </div>
     </main>
 
     <!-- Loading Overlay -->
     <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center hidden text-white">
         <i class="fa-solid fa-spinner fa-spin text-6xl mb-6 text-green-500"></i>
-        <h2 class="text-2xl font-bold mb-2">Х╛░═бЯ┐ ПЗЪб┐ л░о═п╛Я╟ ╕╟н ╣Ъ═Ы╟...</h2>
-        <p class="text-gray-300">Еи┴Ч═░╣ Х░╟ ПХЯ┴ Ек╟Х═╖╛ Х░┴и</p>
+        <h2 class="text-2xl font-bold mb-2">ржХрж╛рж░рзНржбржЯрж┐ ржПржЗржЪржбрж┐ ржлрж░ржорзНржпрж╛ржЯрзЗ рж╕рзЗржн рж╣ржЪрзНржЫрзЗ...</h2>
+        <p class="text-gray-300">ржЕржирзБржЧрзНрж░рж╣ ржХрж░рзЗ ржПржХржЯрзБ ржЕржкрзЗржХрзНрж╖рж╛ ржХрж░рзБржи</p>
     </div>
 
     <script>
@@ -357,7 +358,7 @@
                     captureArea.style.transform = currentTransform;
                     overlay.classList.add('hidden');
                 }).catch(err => {
-                    alert('Х╛░═б б╛Йи▓╦б╟ ╕о╕═п╛ ╣п╝╟Ы╟! Еи┴Ч═░╣ Х░╟ Еи═п Ым┐ ж┐▀╟ Ъ╟╖═Я╛ Х░┴иd');
+                    alert('ржХрж╛рж░рзНржб ржбрж╛ржЙржирж▓рзЛржбрзЗ рж╕ржорж╕рзНржпрж╛ рж╣ржпрж╝рзЗржЫрзЗ! ржЕржирзБржЧрзНрж░рж╣ ржХрж░рзЗ ржЕржирзНржп ржЫржмрж┐ ржжрж┐рзЯрзЗ ржЪрзЗрж╖рзНржЯрж╛ ржХрж░рзБржиред');
                     console.error(err);
                     captureArea.style.transform = currentTransform;
                     overlay.classList.add('hidden');
